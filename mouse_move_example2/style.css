@@ -1,0 +1,17 @@
+body {
+    overflow: hidden;
+}
+
+img {
+    position: absolute;
+    scale: 0.7;
+    top: 50px;
+    left: 200px;
+}
+
+.vod {
+    position: absolute;
+    scale: 0.7;
+    left: 100px;
+
+}
