@@ -13,8 +13,8 @@ window.onload = function () {
     window.addEventListener('click', mouseFunc, false);
 
     function mouseFunc(e) {
-        x = e.clientX
-        y = e.clientY
+        x = (e.clientX - window.innerWidth / 2);
+        y = (e.clientY - window.innerHeight / 2);
         cursor_item.style.transform = "translate(" + x + "px," + y + "px)";
     }
     // loop();
