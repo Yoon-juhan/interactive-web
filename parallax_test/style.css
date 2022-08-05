@@ -1,10 +1,11 @@
 body {
-    height: 10000px;
+    height: auto;
     background: linear-gradient(150deg, red, orange, yellow, green, indigo, purple, black);
+    overflow-x: hidden;
 }
 
 h1 {
-    color: white;
+    color: #eee;
 }
 
 .progress {
@@ -13,16 +14,85 @@ h1 {
     height: 5px;
     top: 0;
     left: 0;
-    background-color: black;
-    z-index: 10;
+    background-color: rgb(12, 218, 233);
+    z-index: 11;
 }
 
 .bar {
     position: absolute;
-    width: 50%;
+    width: 0;
     height: 5px;
     top: 0;
     left: 0;
-    background-color: yellow;
-    z-index: 11;
+    background-color: rgb(155, 16, 136);
+    z-index: 12;
+}
+
+section {
+    position: relative;
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: 30px auto;
+    padding: 10px 20px;
+    z-index: 10;
+}
+
+p {
+    color: #eee;
+}
+
+.cloudWrap {
+    position: absolute;
+}
+
+.cloudWrap img {
+    position: absolute;
+    width: 400px;
+    top: 0;
+    left: 0;
+}
+
+.cloudWrap img:nth-child(1) {
+    top: -100px;
+    left: 700px;
+}
+
+.cloudWrap img:nth-child(2) {
+    top: 800px;
+    left: 0px;
+}
+
+.cloudWrap img:nth-child(3) {
+    top: 1800px;
+    left: 200px;
+}
+
+.cloudWrap img:nth-child(4) {
+    top: 3000px;
+    left: -100px;
+}
+
+.cloudWrap img:nth-child(5) {
+    top: 4200px;
+    left: 900px;
+}
+
+.cloudWrap img:nth-child(6) {
+    top: 5900px;
+    left: -140px;
+}
+
+.cloudWrap img:nth-child(7) {
+    top: 7000px;
+    left: 700px;
+}
+
+.cloudWrap img:nth-child(8) {
+    top: 8000px;
+    left: -190px;
+}
+
+.cloudWrap img:nth-child(9) {
+    top: 9500px;
+    left: 800px;
 }

@@ -1,11 +1,14 @@
 let scrollTop = 0;
-let bar = document.getElementsByClassName("bar")[0];
+let bar;
+let cloudWrap;
 
 window.onload = function () {
+    bar = document.getElementsByClassName("bar")[0];
+    cloudWrap = document.getElementsByClassName("cloudWrap")[0];
 
 }
 
-window.addEventListener("scroll", function () {
+window.addEventListener("scroll", function (e) {
     // 스크롤 값 얻기
     scrollTop = document.documentElement.scrollTop;
 
@@ -14,4 +17,6 @@ window.addEventListener("scroll", function () {
     console.log(per)
 
     bar.style.width = per + "%";
+
+    cloudWrap.style.transform = "translate(0, " + scrollTop / 1.2 + "px)";
 }, false);
