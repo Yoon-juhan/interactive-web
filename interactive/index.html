@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스와이프 갤러리</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/85dc8fb65a.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+</head>
+
+<body>
+
+    <div class="wrap">
+        <h1>UI/UX <span>PORTFOLIO</span></h1>
+        <ul class="auto">
+            <li class="btnStart">
+                <i class="fa-solid fa-play"></i>
+            </li>
+            <li class="btnStop">
+                <i class="fa-solid fa-pause"></i>
+            </li>
+        </ul>
+
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="inner"></div>
+            </div>
+            <div class="swiper-slide">
+                <div class="inner"></div>
+            </div>
+            <div class="swiper-slide">
+                <div class="inner"></div>
+            </div>
+            <div class="swiper-slide">
+                <div class="inner"></div>
+            </div>
+            <div class="swiper-slide">
+                <div class="inner"></div>
+            </div>
+            <div class="swiper-slide">
+                <div class="inner"></div>
+            </div>
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <script>
+        const swiper = new Swiper(".wrap", {
+            pagination: {
+                el: ".swiper-pagination",
+                type: "fraction",
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            slidesPerView: "auto",
+            spaceBetween: 30,
+            loop: true,
+            centeredSlides: true,
+            speed: 500,
+            direction: "horizontal",
+            effect: "coverflow",
+            coverflowEffect: {
+                rotate: 40,
+                stretch: 0,
+                depth: 1,
+                modifier: 1,
+                slideShadows: false,
+                // scale: 1.18,
+            },
+            mousewheel: {
+                invert: false,
+            },
+
+        });
+    </script>
+
+
+</body>
+
+</html>
