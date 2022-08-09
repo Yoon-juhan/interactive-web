@@ -1,0 +1,101 @@
+body {
+    background: url(images/bg.jpg);
+    background-size: 100% 100vh;
+    overflow: hidden;
+}
+
+body main {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* backdrop-filter: blur(5px); */
+    background-color: rgba(0, 0, 0, 0.2);
+    font-family: 'Italianno', cursive;
+}
+
+.page {
+    position: fixed;
+    width: 850px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.page img {
+    width: 400px;
+    height: 200px;
+    margin: 2px;
+    border-radius: 20px;
+}
+
+.in {
+    transition: all 1.5s cubic-bezier(0.86, 0.005, 0.31, 0.995);
+}
+
+.out {
+    transition: all 1s cubic-bezier(0.86, 0.005, 0.31, 0.995);
+}
+
+.out.image0 {
+    transform: translate(-300%, 0);
+    transition-delay: .1s;
+}
+
+.out.image1 {
+    transform: translate(0, -300%);
+    transition-delay: .2s;
+}
+
+.out.image2 {
+    transform: translate(0, 300%);
+    transition-delay: .4s;
+}
+
+.out.image3 {
+    transform: translate(300%, 0);
+    transition-delay: .3s;
+}
+
+.buttons {
+    position: fixed;
+    bottom: 160px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.buttons button {
+    background: rgba(255, 255, 255, 0.4);
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Italianno', cursive;
+}
+
+button:active {
+    scale: 1.1;
+}
+
+.text {
+    position: fixed;
+    left: 50%;
+    top: 19%;
+    width: 400px;
+    height: 70px;
+    padding: 10px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    line-height: 70px;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+}
+
+.text h1 {
+    color: white;
+    font-size: 60px;
+}
